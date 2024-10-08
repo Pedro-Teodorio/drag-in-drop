@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<title>Drag in Drop</title>
+	</head>
+	<body>
+		<div class="border max-w-4xl mx-auto p-6 space-y-4 mt-4 rounded">
+			<h2 class="text-lg font-bold">Prateleira de produtos</h2>
+			<div id="content_products" class="border-dashed border-2 flex justify-center items-center flex-col gap-4 p-4 rounded"></div>
+		</div>
+
+		<div class="border max-w-4xl mx-auto p-6 space-y-4 mt-4 rounded">
+			<h2 class="text-lg font-bold">Carrinho de produtos</h2>
+			<div id="cart_products" class="border-dashed border-2 flex justify-center items-center flex-col gap-4 p-4 rounded">
+				<p id="empty_message" class="text-center text-xl font-semibold h-32 flex items-center">Arraste os produtos para cá</p>
+              
+			</div>
+		</div>
+
+		<div class="max-w-4xl mx-auto mt-6 flex justify-between">
+            <span class="text-2xl font-bold">Total:</span>
+            <div class="flex items-center gap-2">
+                <span class="text-xl semi-bold">Preço: </span>
+                <span id="total" class="text-2xl semi-bold text-emerald-500">R$ 00.00</span>
+            </div>
+        </div>
+		<script src="script.js"></script>
+	</body>
+</html>
