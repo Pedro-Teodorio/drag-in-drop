@@ -69,7 +69,7 @@ cart_products.addEventListener("drop", (event) => {
 		cart_products.appendChild(elementClone); // adicionando o elemento ao carrinho
 		total += price;
 
-		elementClone.addEventListener("click", () => {
+		elementClone.addEventListener("dblclick", () => {
 			const quantityElement = elementClone.querySelector(".qtd_product"); // pegando o elemento de quantidade
 			const quantity = parseInt(quantityElement.textContent.split(" ")[1]); // pegando a quantidade
 			if (quantity > 1) {
